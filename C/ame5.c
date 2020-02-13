@@ -7,14 +7,13 @@ Lab #7
 #include <stdlib.h>
 #include <time.h>
 int generator(void);
-void outprints(int*);
+int ask_user(void);
+void outprints(int* output);
 
 int main(void)
 {
-	int rolls = 0;
+	int rolls = ask_user();
 	srand(time(0));
-	printf("How many times would you like to roll the die?");
-	scanf("%d", &rolls);
 	int output[10];
 	int i;
 	for (i = 0; i < 10; i++)
@@ -44,4 +43,12 @@ void outprints(int* output)
 		printf("%d %s\n", output[i-1], text[i-1]);
 	}
 
+}
+
+int ask_user(void)
+{
+	int rolls;
+	printf("How many times would you like to roll the die?");
+	scanf("%d", &rolls);
+	return rolls;
 }
