@@ -8,10 +8,10 @@ Lab 9
 #include <ctype.h>
 #include <string.h>
 
-void printVowels(int *charr);
-void printLower(int *charr);
-void printUpper(int *charr);
-int getNumber(int *charr);
+void printVowels(char* charr);
+void printLower(char* charr);
+void printUpper(char* charr);
+int getNumber(char* charr);
 
 int main(void)
 {
@@ -28,9 +28,10 @@ int main(void)
 
 }
 
-void printVowels(int *charr)
+void printVowels(char* charr)
 {
-    int *ptr, *i;
+    int *i;
+    char *ptr;
     int j, counter;
     int vowelAscii[12] = {65, 69, 73, 79, 85, 89, 97, 101, 105, 111, 117, 121};
     for (ptr = charr; ptr < charr + 20; ptr++)
