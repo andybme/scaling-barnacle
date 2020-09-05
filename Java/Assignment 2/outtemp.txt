@@ -1,0 +1,21 @@
+Statistics On Commission Only Employees
+FNAME     LNAME     Total Compensation
+Jose      Ramos      $605.00          
+James     Rossner    $961.00          
+Olivia    Lannier    $859.50          
+Alicia    Keys       $1029.46         
+James     Toros      $2295.75         
+Dotty     Dickson    $1566.03         
+Total Compensation For Commission Only Employees Is: $7316.74
+
+Statistics On Base Pay Plus Commission Employees
+FNAME     LNAME     Total Compensation
+Henry     Hali       $3738.02         
+Hallie    Hendrix    $4181.32         
+Coco      Sanchez    $4873.81         
+Ilya      Kurayakin  $3115.23         
+Mary      Lamb       $1605.75         
+Toal Compensation For Base Plus Commission Employees Is: $17514.12
+
+Total Compensation For All Employees Is: $24830.86
+

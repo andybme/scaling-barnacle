@@ -17,11 +17,35 @@ public class Complex
         if (imaginary == 0) return true;
         return false;
     }
+
+    public double getReal()
+    {
+        return this.real;
+    }
+    public double getImaginary()
+    {
+        return this.imaginary;
+    }
+    public void setReal(double realIn)
+    {
+        this.real = realIn;
+    }
+    public void setImaginary(double fakeIn)
+    {
+        this.fake = fakeIn;
+    }
     public String toString()
     {
         String answer = String.format("%.2f", real );
         if (imaginary == 0) return answer;
-        answer = answer + String.format(" " + Double.toString(imaginary));
+        if (imaginary > 0) 
+        {
+            answer = answer + String.format(" + %.2fi", Math.abs(imaginary));
+        }
+        if (imaginary < 0) 
+        {                  
+            answer = answer + String.format(" - %.2fi", Math.abs(imaginary));
+        }
         return answer;
     }
 }

@@ -28,13 +28,15 @@ public class Quadratic
         } else
         {
             c1real = c2real = (-b / (2*a));
+            discriminant = Math.abs(discriminant);
+            discriminant = Math.sqrt(discriminant);
+            discriminant = discriminant / (2*a);
         }
+
 
         Complex c1 = new Complex(c1real, discriminant);
         Complex c2 = new Complex(c2real, -1*discriminant);
         ComplexPair answer = new ComplexPair(c1, c2);
-
-        System.out.println(c1);
 
         return answer;
     }
@@ -55,14 +57,14 @@ public class Quadratic
         {
             if(c1real == c2real)
             {
-                return "Quadratic equation: one real root";
+                return "Double real root";
             } else 
             {
-                return "Quadratic equation: two real roots";
+                return "Two distinct real roots";
             }
         } else
         {
-            return "Quadratic equation: two imaginary roots";
+            return "Two distinct complex roots";
         }
 
     }
