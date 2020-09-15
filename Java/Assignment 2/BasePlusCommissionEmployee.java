@@ -1,7 +1,6 @@
 /*
     Assignment #2 by Andy Me
 */
-
 public class BasePlusCommissionEmployee extends CommissionEmployee
 {
 	private double baseSalary;
