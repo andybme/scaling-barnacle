@@ -30,16 +30,15 @@ public class Stock extends Investment
 	//methods
 	public void calcStockValues(double priceChange, double dividendPercent){
 		pricePerShare += priceChange;
-		double currentDividend = pricePerShare*dividendPercent/100.0;
-		dividendsEarnedToDate += currentDividend;
-		while(currentDividend >= pricePerShare){
-			numOfSharesOwned++;
-			currentDividend = currentDividend - pricePerShare;
+		double currentDividend = pricePerShare * dividendPercent / 100.0;
+		dividendsEarnedToDate += currentDividend * numOfSharesOwned;
+		if(currentDividend > 0){
+			numOfSharesOwned += (currentDividend / pricePerShare);
 		}
 		setInvestmentValue(pricePerShare*numOfSharesOwned);
 	}
 	public String toString(){
-		String output = String.format("%s\nPrice Per Share: $%.2f Number of Shares: %.2f\nCurrent Value: $%.2f Investment Earnings to date: %.2f", super.toString(), pricePerShare, numOfSharesOwned, super.getInvestmentValue(), dividendsEarnedToDate);
+		String output = String.format("%s\nPrice Per Share: $%.2f Number of Shares: %.2f\nCurrent Value: $%.2f Investment Earnings to date: $%.2f\n", super.toString(), pricePerShare, numOfSharesOwned, super.getInvestmentValue(), dividendsEarnedToDate);
 		return output;
 	}
 }

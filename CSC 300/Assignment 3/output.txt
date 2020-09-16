@@ -1,0 +1,32 @@
+Results of the Portfolio Test over 60 months
+Investment: Stock Name: Netflix
+Price Per Share: $209.61 Number of Shares: 101.14
+Current Value: $21198.91 Investment Earnings to date: 18634.87
+
+Investment: Stock Name: Google
+Price Per Share: $12466.59 Number of Shares: 201.05
+Current Value: $2506345.05 Investment Earnings to date: 1001649.35
+
+Investment: Bond Name: CALMUNI
+Price Per Bond: $34.77 Number of Bonds: 100
+Current Value: $4259.33 Cash On Hand To Date: $782.33
+
+Investment: Bond Name: LACity
+Price Per Bond: $10.57 Number of Bonds: 150
+Current Value: $1878.82 Cash On Hand To Date: $293.32
+
+Investment: SavingsAccount Name: USBank Account Number: 6789123
+Current Value: $34358.03 Interest Earned: $2354.68
+
+Investment: SavingsAccount Name: CITI Account Number: 123456
+Current Value: $44227.12 Interest Earned: $3756.40
+
+Investment: CheckingAccount Name: Federal Account Number: 565412
+Minimum For Free Checking: $500.00 Check Charge: $0.50
+Current Value: $58372.11 Interest Earned: $1733.68 Check Charges: $0.00
+
+Investment: CheckingAccount Name: CreditCal Account Number: 556701
+Minimum For Free Checking: $400.00 Check Charge: $0.35
+Current Value: $62969.86 Interest Earned: $1291.63 Check Charges: $0.00
+
+The total value for all of the investments is $2733609.23

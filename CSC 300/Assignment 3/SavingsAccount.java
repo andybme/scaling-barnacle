@@ -55,7 +55,7 @@ public class SavingsAccount extends BankAccount
 	}
 	public String toString()
 	{
-		String output = String.format("%s\nCurrent Value: $%.2f Interest Earned: $%.2f", super.toString(), super.getInvestmentValue(), totalInterestEarned);
+		String output = String.format("%s\nCurrent Value: $%.2f Interest Earned: $%.2f\n", super.toString(), super.getInvestmentValue(), totalInterestEarned);
 		return output;
 	}
 }

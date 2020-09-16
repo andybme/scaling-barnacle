@@ -81,7 +81,7 @@ public class CheckingAccount extends BankAccount
 	}
 	public String toString()
 	{
-		String output = String.format("%s\nMinimum For Free Checking: $%.2f Check Charge: $.2f\nCurrent Value: $%.2f Interest Earned: $%.2f Check Charges: $%.2f", super.toString(), minimumCheckFreeBalance, checkCharge, super.getInvestmentValue(), totalInterestEarned, totalCheckCharges);
+		String output = String.format("%s\nMinimum For Free Checking: $%.2f Check Charge: $%.2f\nCurrent Value: $%.2f Interest Earned: $%.2f Check Charges: $%.2f\n", super.toString(), minimumCheckFreeBalance, checkCharge, super.getInvestmentValue(), totalInterestEarned, totalCheckCharges);
 		return output;
 	}
 }

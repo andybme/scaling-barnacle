@@ -30,7 +30,7 @@ public class Bond extends Investment
 	}
 	public void setAnnualReturnPercentage(double newPerc)
 	{
-		this.rate = (newPerc / 12 / 100);
+		this.rate = (newPerc / 12 / 100.0);
 		this.annualReturnPercentage = newPerc;
 	}
 	public double getPricePerBond()
@@ -48,12 +48,12 @@ public class Bond extends Investment
 	//methods
 	public void calcBondValues()
 	{
-		cashEarnedToDate += cashEarnedToDate + (rate * pricePerBond * numOfBondsOwned);
+		cashEarnedToDate += (rate * pricePerBond * numOfBondsOwned);
 		setInvestmentValue(cashEarnedToDate + (pricePerBond * numOfBondsOwned));
 	}
 	public String toString()
 	{
-		String output = String.format("%s\nPrice Per Bond: $%.2f Number of Bonds: %d\nCurrent Value: $%.2f Cash On Hand To Date: $%.2f", super.toString(), pricePerBond, numOfBondsOwned, super.getInvestmentValue(), cashEarnedToDate);
+		String output = String.format("%s\nPrice Per Bond: $%.2f Number of Bonds: %d\nCurrent Value: $%.2f Cash On Hand To Date: $%.2f\n", super.toString(), pricePerBond, numOfBondsOwned, super.getInvestmentValue(), cashEarnedToDate);
 		return output;
 	}
 }
